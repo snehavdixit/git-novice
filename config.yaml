@@ -27,13 +27,13 @@ life_cycle: 'stable'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/mambelli/git-novice'
+source: 'https://github.com/snehavdixit/git-novice'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'marcom@fnal.gov'
+contact: 'sdixit2@huskers.unl.edu'
 
 # Navigation ------------------------------------------------
 #
