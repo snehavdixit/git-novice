@@ -30,7 +30,7 @@ progress by looking, so let's do that using our `HEAD`s.  Before we start,
 let's make a change to `guacamole.md`, adding yet another line.
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 $ cat guacamole.md
 ```
 
