@@ -78,7 +78,7 @@ exactly the same way as we've been doing before:
 
 ```bash
 $ cd ~/Desktop/alflin-recipes
-$ nano hummus.md
+$ vim hummus.md
 $ cat hummus.md
 ```
 

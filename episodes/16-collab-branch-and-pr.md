@@ -97,7 +97,7 @@ This creates a separate area for us to work in and add changes. It's a bit like 
 
 We'll add a recipe to prepare tagliatelle with butter and sage. In the `tagliatelle.md` file:
 ```bash
-$ nano tagliatelle.md
+$ vim tagliatelle.md
 $ cat tagliatelle.md
 ```
 ```output

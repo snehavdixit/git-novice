@@ -44,7 +44,7 @@ $ cat guacamole.md
 Let's add a line to the collaborator's copy only:
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 $ cat guacamole.md
 ```
 
@@ -91,7 +91,7 @@ make a different change to their copy
 *without* updating from GitHub:
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 $ cat guacamole.md
 ```
 

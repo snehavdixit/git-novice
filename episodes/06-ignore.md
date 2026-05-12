@@ -54,17 +54,17 @@ so let's tell Git to ignore them.
 We do this by creating a file in the root directory of our project called `.gitignore`:
 
 ```bash
-$ nano .gitignore
+$ vim .gitignore
 ```
 
-Type the text below into the `.gitignore` file:
+Enter insert mode and type the text below into the `.gitignore` file:
 
 ```
 *.png
 pictures/
 ```
 
-Save the file and exit your editor.
+Save the file and exit your editor. Remember, with `vim`, we enter insert mode with `i`, and save by pressing `Esc` and then `:w`+`Enter`/`Return`. Exit `vim` with `:q`+`Enter`/`Return`. If you are feeling bold, you can save an exit with a single command - `:wq` + `Enter`/`Return`.
 
 Verify that the file contains the files to ignore.
 

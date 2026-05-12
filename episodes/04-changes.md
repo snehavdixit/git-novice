@@ -28,15 +28,14 @@ $ cd ~/Desktop/recipes
 ```
 
 Let's create a file called `guacamole.md` that contains the basic structure of our first recipe.
-We'll use `nano` to edit the file;
+We'll use `vim` to edit the file;
 you can use whatever editor you like.
-In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the steps to create or edit a new file will depend on the editor you choose (it might not be nano). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create.html#which-editor) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
+In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the steps to create or edit a new file will depend on the editor you choose (it might not be vim). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create.html#which-editor) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 ```
-
-Type the text below into the `guacamole.md` file:
+Press `i` to enter insert mode, and type the text below into the `guacamole.md` file:
 
 ```output
 # Guacamole
@@ -44,7 +43,7 @@ Type the text below into the `guacamole.md` file:
 ## Instructions
 ```
 
-Save the file and exit your editor.
+Save the file - press `Esc` to exit insert mode, and then type `:w` and press `Enter` or `Return`. Exit your editor - for `vim`, that is `:q` followed by pressing `Enter` or `Return`.
 
 :::::::::::::::::::::::::::::::::::::::::  spoiler
 
@@ -186,7 +185,7 @@ This permanent copy is called a [commit](../learners/reference.md#commit)
 We use the `-m` flag (for "message")
 to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
 If we just run `git commit` without the `-m` option,
-Git will launch `nano` (or whatever other editor we configured as `core.editor`)
+Git will launch `vim` (or whatever other editor we configured as `core.editor`)
 so that we can write a longer message.
 
 [Good commit messages][commit-messages] start with a brief (\<50 characters) statement about the
@@ -243,11 +242,11 @@ so that our filesystem doesn't become cluttered
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Now suppose Alfredo adds more information to the file.
-(Again, we'll edit with `nano` and then `cat` the file to show its contents;
+(Again, we'll edit with `vim` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 $ cat guacamole.md
 ```
 
@@ -404,7 +403,7 @@ First,
 we'll improve our recipe by changing 'lemon' to 'lime':
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 $ cat guacamole.md
 ```
 
@@ -740,7 +739,7 @@ that you want to commit as a single snapshot.
 First we make our changes to the `guacamole.md` and `groceries.md` files:
 
 ```bash
-$ nano guacamole.md
+$ vim guacamole.md
 $ cat guacamole.md
 ```
 
@@ -753,7 +752,7 @@ $ cat guacamole.md
 ```
 
 ```bash
-$ nano groceries.md
+$ vim groceries.md
 $ cat groceries.md
 ```
 
@@ -828,7 +827,7 @@ Initialise git:
 $ git init
 ```
 
-Create your biography file `me.txt` using `nano` or another text editor.
+Create your biography file `me.txt` using `vim` or another text editor.
 Once in place, add and commit it to the repository:
 
 ```bash

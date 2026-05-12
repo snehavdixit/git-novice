@@ -199,7 +199,7 @@ Open or create the SSH config file:
 
 ```bash
 
-$ nano ~/.ssh/config
+$ vim ~/.ssh/config
 ```
 
 Add an entry for GitHub, replacing the path with your key’s actual name and location:
