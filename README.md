@@ -3,7 +3,9 @@
 
 # git-novice
 
-This is an extended version maintained by [Marco Mambelli](https://github.com/mambelli/) of the [Software Carpentry git-novice tutorial](https://github.com/swcarpentry/git-novice). 
+Forked specifically for USCMS PURSUE 2026.
+
+This is an extended version based on the one maintained by [Marco Mambelli](https://github.com/mambelli/) of the [Software Carpentry git-novice tutorial](https://github.com/swcarpentry/git-novice). I have modified it to use the text editor vim instead of nano.
 Please see [https://mambelli.github.io/git-novice/](https://mambelli.github.io/git-novice/) for a rendered version of this extended version.
 The changes include instructions to optionally use HTTPS and tokens for GitHub authentication and two new episodes about "Setting up a Python Project" and
 "Collaborating - Branching and Pull Requests".
