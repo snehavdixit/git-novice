@@ -443,20 +443,20 @@ be in the <code>recipes</code> directory.</p>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="ex">$</span> cd ~/Desktop/recipes</span></code></pre>
 </div>
 <p>Let’s create a file called <code>guacamole.md</code> that contains
-the basic structure of our first recipe. We’ll use <code>nano</code> to
+the basic structure of our first recipe. We’ll use <code>vim</code> to
 edit the file; you can use whatever editor you like. In particular, this
 does not have to be the <code>core.editor</code> you set globally
 earlier. But remember, the steps to create or edit a new file will
-depend on the editor you choose (it might not be nano). For a refresher
+depend on the editor you choose (it might not be vim). For a refresher
 on text editors, check out <a href="https://swcarpentry.github.io/shell-novice/03-create.html#which-editor" class="external-link">“Which
 Editor?”</a> in <a href="https://swcarpentry.github.io/shell-novice/" class="external-link">The Unix Shell</a>
 lesson.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">$</span> nano guacamole.md</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">$</span> vim guacamole.md</span></code></pre>
 </div>
-<p>Type the text below into the <code>guacamole.md</code> file:</p>
+<p>Press <code>i</code> to enter insert mode, and type the text below into the <code>guacamole.md</code> file:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -464,7 +464,7 @@ lesson.</p>
 <span><span class="co">## Ingredients</span></span>
 <span><span class="co">## Instructions</span></span></code></pre>
 </div>
-<p>Save the file and exit your editor.</p>
+<p>Save the file - press <code>Esc</code>> to exit insert mode, and then type <code>:w</code> and press <code>Enter</code> or <code>Return</code>. Exit your editor - for <code>vim</code>>, that is <code>:q</code> followed by <code>Enter</code> or <code>Return</code>.</p>
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
@@ -640,7 +640,7 @@ identifier.</p>
 <p>We use the <code>-m</code> flag (for “message”) to record a short,
 descriptive, and specific comment that will help us remember later on
 what we did and why. If we just run <code>git commit</code> without the
-<code>-m</code> option, Git will launch <code>nano</code> (or whatever
+<code>-m</code> option, Git will launch <code>vim</code> (or whatever
 other editor we configured as <code>core.editor</code>) so that we can
 write a longer message.</p>
 <p><a href="https://chris.beams.io/posts/git-commit/" class="external-link">Good commit
@@ -703,13 +703,13 @@ version).</p>
 </div>
 </div>
 <p>Now suppose Alfredo adds more information to the file. (Again, we’ll
-edit with <code>nano</code> and then <code>cat</code> the file to show
+edit with <code>vim</code> and then <code>cat</code> the file to show
 its contents; you may use a different editor, and don’t need to
 <code>cat</code>.)</p>
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1" aria-label="code-block-24-1"></a><span class="ex">$</span> nano guacamole.md</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1" aria-label="code-block-24-1"></a><span class="ex">$</span> vim guacamole.md</span>
 <span id="cb24-2"><a href="#cb24-2" tabindex="-1" aria-label="code-block-24-2"></a><span class="ex">$</span> cat guacamole.md</span></code></pre>
 </div>
 <div class="codewrapper">
@@ -857,7 +857,7 @@ by changing ‘lemon’ to ‘lime’:</p>
 <div class="codewrapper sourceCode" id="cb34">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" tabindex="-1" aria-label="code-block-34-1"></a><span class="ex">$</span> nano guacamole.md</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" tabindex="-1" aria-label="code-block-34-1"></a><span class="ex">$</span> vim guacamole.md</span>
 <span id="cb34-2"><a href="#cb34-2" tabindex="-1" aria-label="code-block-34-2"></a><span class="ex">$</span> cat guacamole.md</span></code></pre>
 </div>
 <div class="codewrapper">
@@ -1246,7 +1246,7 @@ changes.</li>
 <div class="codewrapper sourceCode" id="cb60">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" tabindex="-1" aria-label="code-block-60-1"></a><span class="ex">$</span> nano guacamole.md</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" tabindex="-1" aria-label="code-block-60-1"></a><span class="ex">$</span> vim guacamole.md</span>
 <span id="cb60-2"><a href="#cb60-2" tabindex="-1" aria-label="code-block-60-2"></a><span class="ex">$</span> cat guacamole.md</span></code></pre>
 </div>
 <div class="codewrapper">
@@ -1261,7 +1261,7 @@ changes.</li>
 <div class="codewrapper sourceCode" id="cb62">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb62-1"><a href="#cb62-1" tabindex="-1" aria-label="code-block-62-1"></a><span class="ex">$</span> nano groceries.md</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb62-1"><a href="#cb62-1" tabindex="-1" aria-label="code-block-62-1"></a><span class="ex">$</span> vim groceries.md</span>
 <span id="cb62-2"><a href="#cb62-2" tabindex="-1" aria-label="code-block-62-2"></a><span class="ex">$</span> cat groceries.md</span></code></pre>
 </div>
 <div class="codewrapper">
@@ -1351,7 +1351,7 @@ state.</li>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb70-1"><a href="#cb70-1" tabindex="-1" aria-label="code-block-70-1"></a><span class="ex">$</span> git init</span></code></pre>
 </div>
 <p>Create your biography file <code>me.txt</code> using
-<code>nano</code> or another text editor. Once in place, add and commit
+<code>vim</code> or another text editor. Once in place, add and commit
 it to the repository:</p>
 <div class="codewrapper sourceCode" id="cb71">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
