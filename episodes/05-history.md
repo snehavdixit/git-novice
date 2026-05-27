@@ -27,7 +27,7 @@ directory by using the identifier `HEAD`.
 
 We've been adding small changes at a time to `guacamole.md`, so it's easy to track our
 progress by looking, so let's do that using our `HEAD`s.  Before we start,
-let's make a change to `guacamole.md`, adding yet another line.
+let's make a change to `guacamole.md`, adding yet another line. Do not forget to save your work.
 
 ```bash
 $ vim guacamole.md

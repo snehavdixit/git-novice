@@ -29,7 +29,7 @@ $ cd ~/Desktop/recipes
 
 Let's create a file called `guacamole.md` that contains the basic structure of our first recipe.
 We'll use `vim` to edit the file;
-you can use whatever editor you like.
+you can use whatever editor you like (it might not be vim).
 In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the steps to create or edit a new file will depend on the editor you choose (it might not be vim). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create.html#which-editor) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
 
 ```bash
