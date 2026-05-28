@@ -25,7 +25,7 @@ Alfredo would like to exchange recipes with his friends in Europe. They measure 
 So he decided to start a Python project to automate the conversion for the ingredients' quantities.
 
 ![](fig/unitconversions.png){alt='kitchen conversions'}
-Kitchen conversions doodle by me.
+Kitchen conversions doodle by Sneha.
 
 Most Python projects are structured in a similar way. There are very good reasons for this - if you follow the 'standard', other people who approach your code will recognise parts of it and will know by default how to install your code, run any tests that might exist, and where to look for source code or to change things like the dependencies that are required.
  
