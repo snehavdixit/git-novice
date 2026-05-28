@@ -58,7 +58,7 @@
         </ul></div>
     </div>
   </div>
-  <hr></header><nav class="navbar navbar-expand-xl bottom-nav software" aria-label="Main Navigation"><div class="container-fluid nav-container">
+</header><nav class="navbar navbar-expand-xl bottom-nav software" aria-label="Main Navigation"><div class="container-fluid nav-container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
@@ -107,12 +107,8 @@
     -->
     <a id="search-button" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div><!--/div.container-fluid -->
-</nav><aside class="col-md-12 lesson-progress"><div style="width: 8%" class="percentage">
-    8%
-  </div>
-  <div class="progress software">
-    <div class="progress-bar software" role="progressbar" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="8" style="width: 8%">
-    </div>
+</nav><aside class="col-md-12 lesson-progress"><div class="progress software">
+    <div class="progress-bar software" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">8%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -168,7 +164,7 @@
               </div><!--div.sidenav-view-selector -->
             </div><!--/div.col -->
 
-            <hr></div><!--/div.mobile-row -->
+          </div><!--/div.mobile-row -->
 
           <div class="accordion accordion-flush" id="accordion-chapters-toggle">
             <div class="accordion-item">
@@ -380,8 +376,8 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter Top"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="03-create.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="05-history.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="03-create.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link float-end" href="05-history.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -394,11 +390,11 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
-      <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
+    </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Tracking Changes</h1>
-        <p>Last updated on 2026-01-30 |
+        <p>Last updated on 2026-05-28 |
 
-        <a href="https://github.com/mambelli/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/snehavdixit/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
@@ -444,11 +440,11 @@ be in the <code>recipes</code> directory.</p>
 </div>
 <p>Let’s create a file called <code>guacamole.md</code> that contains
 the basic structure of our first recipe. We’ll use <code>vim</code> to
-edit the file; you can use whatever editor you like. In particular, this
-does not have to be the <code>core.editor</code> you set globally
-earlier. But remember, the steps to create or edit a new file will
-depend on the editor you choose (it might not be vim). For a refresher
-on text editors, check out <a href="https://swcarpentry.github.io/shell-novice/03-create.html#which-editor" class="external-link">“Which
+edit the file; you can use whatever editor you like (it might not be
+vim). In particular, this does not have to be the
+<code>core.editor</code> you set globally earlier. But remember, the
+steps to create or edit a new file will depend on the editor you choose
+(it might not be vim). For a refresher on text editors, check out <a href="https://swcarpentry.github.io/shell-novice/03-create.html#which-editor" class="external-link">“Which
 Editor?”</a> in <a href="https://swcarpentry.github.io/shell-novice/" class="external-link">The Unix Shell</a>
 lesson.</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -456,7 +452,8 @@ lesson.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">$</span> vim guacamole.md</span></code></pre>
 </div>
-<p>Press <code>i</code> to enter insert mode, and type the text below into the <code>guacamole.md</code> file:</p>
+<p>Press <code>i</code> to enter insert mode, and type the text below
+into the <code>guacamole.md</code> file:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -464,7 +461,11 @@ lesson.</p>
 <span><span class="co">## Ingredients</span></span>
 <span><span class="co">## Instructions</span></span></code></pre>
 </div>
-<p>Save the file - press <code>Esc</code> to exit insert mode, and then type <code>:w</code> and press <code>Enter</code> or <code>Return</code>. Exit your editor - for <code>vim</code>, that is <code>:q</code> followed by <code>Enter</code> or <code>Return</code>.</p>
+<p>Save the file - press <code>Esc</code> to exit insert mode, and then
+type <code>:w</code> and press <code>Enter</code> or
+<code>Return</code>. Exit your editor - for <code>vim</code>, that is
+<code>:q</code> followed by pressing <code>Enter</code> or
+<code>Return</code>.</p>
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
@@ -1350,9 +1351,9 @@ state.</li>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb70-1"><a href="#cb70-1" tabindex="-1" aria-label="code-block-70-1"></a><span class="ex">$</span> git init</span></code></pre>
 </div>
-<p>Create your biography file <code>me.txt</code> using
-<code>vim</code> or another text editor. Once in place, add and commit
-it to the repository:</p>
+<p>Create your biography file <code>me.txt</code> using <code>vim</code>
+or another text editor. Once in place, add and commit it to the
+repository:</p>
 <div class="codewrapper sourceCode" id="cb71">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1419,21 +1420,21 @@ the local repository.</li>
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/mambelli/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/snehavdixit/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/mambelli/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/mambelli/git-novice/" class="external-link">Source</a></p>
+        | <a href="https://github.com/snehavdixit/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/snehavdixit/git-novice/" class="external-link">Source</a></p>
         <p>
-        <a href="https://github.com/mambelli/git-novice/blob/main/" class="external-link">Cite</a>
-        | <a href="mailto:marcom@fnal.gov">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        <a href="https://github.com/snehavdixit/git-novice/blob/main/" class="external-link">Cite</a>
+        | <a href="mailto:sdixit2@huskers.unl.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 		</div>
 		<div class="col-md-6">
 
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.1)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1455,8 +1456,8 @@ the local repository.</li>
   "url": "https://swcarpentry.github.io/git-novice/04-changes.html",
   "identifier": "https://swcarpentry.github.io/git-novice/04-changes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2026-01-30",
-  "datePublished": "2026-05-05"
+  "dateModified": "2026-05-28",
+  "datePublished": "2026-05-28"
 }
 
   </script><script>

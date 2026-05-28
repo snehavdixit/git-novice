@@ -58,7 +58,7 @@
         </ul></div>
     </div>
   </div>
-  <hr></header><nav class="navbar navbar-expand-xl bottom-nav software" aria-label="Main Navigation"><div class="container-fluid nav-container">
+</header><nav class="navbar navbar-expand-xl bottom-nav software" aria-label="Main Navigation"><div class="container-fluid nav-container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
@@ -107,12 +107,8 @@
     -->
     <a id="search-button" class="btn btn-primary" href="../instructor/aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div><!--/div.container-fluid -->
-</nav><aside class="col-md-12 lesson-progress"><div style="width: 27%" class="percentage">
-    27%
-  </div>
-  <div class="progress software">
-    <div class="progress-bar software" role="progressbar" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="27" style="width: 27%">
-    </div>
+</nav><aside class="col-md-12 lesson-progress"><div class="progress software">
+    <div class="progress-bar software" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">27%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -168,7 +164,7 @@
               </div><!--div.sidenav-view-selector -->
             </div><!--/div.col -->
 
-            <hr></div><!--/div.mobile-row -->
+          </div><!--/div.mobile-row -->
 
           <div class="accordion accordion-flush" id="accordion-chapters-toggle">
             <div class="accordion-item">
@@ -380,8 +376,8 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter Top"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="../instructor/05-history.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/07-github.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="../instructor/05-history.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link float-end" href="../instructor/07-github.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -394,11 +390,11 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
-      <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
+    </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Ignoring Things</h1>
-        <p>Last updated on 2026-01-30 |
+        <p>Last updated on 2026-05-28 |
 
-        <a href="https://github.com/mambelli/git-novice/edit/main/episodes/06-ignore.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/snehavdixit/git-novice/edit/main/episodes/06-ignore.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
@@ -469,12 +465,20 @@ called <code>.gitignore</code>:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">$</span> nano .gitignore</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">$</span> vim .gitignore</span></code></pre>
 </div>
-<p>Type the text below into the <code>.gitignore</code> file:</p>
+<p>Enter insert mode and type the text below into the
+<code>.gitignore</code> file:</p>
 <pre><code>*.png
 pictures/</code></pre>
-<p>Save the file and exit your editor.</p>
+<p>Save the file and exit your editor. Remember, with <code>vim</code>,
+we enter insert mode with <code>i</code>, and save by pressing
+<code>Esc</code> and then
+<code>:w</code>+<code>Enter</code>/<code>Return</code>. Exit
+<code>vim</code> with
+<code>:q</code>+<code>Enter</code>/<code>Return</code>. If you are
+feeling bold, you can save an exit with a single command -
+<code>:wq</code> + <code>Enter</code>/<code>Return</code>.</p>
 <p>Verify that the file contains the files to ignore.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -589,7 +593,7 @@ nothing to commit, working tree clean</code></pre>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>If you only want to ignore the contents of
 <code>pictures/cake</code>, you can change your <code>.gitignore</code>
@@ -630,7 +634,7 @@ directory except for <code>final.png</code>? Hint: Find out what
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You would add the following two lines to your .gitignore:</p>
 <div class="codewrapper">
@@ -679,7 +683,7 @@ not <code>pictures/pie</code>?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>If you want to ignore the contents of <code>pictures/</code> but not
 those of <code>pictures/pie/</code>, you can change your
@@ -727,7 +731,7 @@ ignore all <code>.dat</code> files in
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Appending <code>pictures/data/location/gps/*.dat</code> will match
 every file in <code>pictures/data/location/gps</code> that ends with
@@ -766,7 +770,7 @@ listing the names of the corresponding folders?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>In the <code>.gitignore</code> file, write:</p>
 <div class="codewrapper">
@@ -805,7 +809,7 @@ exception with the exclamation point operator.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>The <code>!</code> modifier will negate an entry from a previously
 defined ignore pattern. Because the <code>!*.csv</code> entry negates
@@ -847,7 +851,7 @@ via <code>.gitignore</code>.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>append either <code>log_*</code> or <code>log*</code> as a new entry
 in your .gitignore</li>
@@ -898,21 +902,21 @@ can include files that would normally be ignored.</li>
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/mambelli/git-novice/edit/main/episodes/06-ignore.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/snehavdixit/git-novice/edit/main/episodes/06-ignore.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/mambelli/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/mambelli/git-novice/" class="external-link">Source</a></p>
+        | <a href="https://github.com/snehavdixit/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/snehavdixit/git-novice/" class="external-link">Source</a></p>
         <p>
-        <a href="https://github.com/mambelli/git-novice/blob/main/" class="external-link">Cite</a>
-        | <a href="mailto:marcom@fnal.gov">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        <a href="https://github.com/snehavdixit/git-novice/blob/main/" class="external-link">Cite</a>
+        | <a href="mailto:sdixit2@huskers.unl.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 		</div>
 		<div class="col-md-6">
 
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.1)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -934,8 +938,8 @@ can include files that would normally be ignored.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/06-ignore.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/06-ignore.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2026-01-30",
-  "datePublished": "2026-05-05"
+  "dateModified": "2026-05-28",
+  "datePublished": "2026-05-28"
 }
 
   </script><script>
